@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOIL SENSEI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Add some basic styles for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo" width="100" height="100">
+        </div>
+        <ul>
+            <li><a href="#main-content" id="home-link">HOME</a></li>
+            <li><a href="#section1">SOIL NUTRIENT MONITORING</a></li>
+           
+            <li><a href="#section3">MANUAL FERTILIZER</a></li>
+            <!-- New Sections -->
+            <li><a href="#section4">NPK DESIRED LEVEL</a></li>
+            <li><a href="#section5">ACCOUNT</a></li>
+        </ul>
+    </nav>
+    <div id="main-content">
+        <h1>SoilSense: Revolutionizing Agriculture through Smart Soil Management</h1>
+
+        <p>In the ever-evolving world of agriculture, harnessing technology to maximize crop growth and optimize resource usage has become paramount. Enter SoilSense—a pioneering platform that is transforming the way we nurture our crops.</p>
+        <p>At SoilSense, we are dedicated to empowering farmers with cutting-edge technology that seamlessly monitors NPK (nitrogen, phosphorus, and potassium) nutrients, manages moisture levels, and automates fertilizer application. Our goal is simple yet transformative: to help farmers make data-driven decisions, boost crop yields, enhance sustainability, and ultimately revolutionize modern agriculture.</p>
+        <p>Join us on this journey as we delve into the innovative world of SoilSense, where technology and agriculture converge to create a more prosperous and sustainable future for farmers and the planet.</p>
+
+        <h1>LaMotte Soil Fertility Level Guidelines</h1>
+
+        <table border="1">
+            <tr>
+                <th>Status</th>
+                <th>Nitrogen (ppm)</th>
+                <th>Phosphorus (ppm)</th>
+                <th>Potassium (ppm)</th>
+            </tr>
+            <tr>
+                <td>Low</td>
+                <td>0-15</td>
+                <td>0-25</td>
+                <td>0-60</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>15-30</td>
+                <td>25-50</td>
+                <td>60-100</td>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>30+</td>
+                <td>50+</td>
+                <td>100+</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content" id="section1">
+        <!-- Box 1 -->
+        <div id="dashboard">
+            <div class="card">
+                <i class="fas fa-tint icon"></i>
+                <h2>Moisture</h2>
+                <div class="metric">50%</div>
+            </div>
+            <div class="card">
+                <i class="fas fa-fire icon"></i>
+                <h2>Temperature</h2>
+                <div class="metric">25°C</div>
+            </div>
+            <div class="card">
+                <i class="fas fa-seedling icon"></i>
+                <h2>Nitrogen</h2>
+                <div class="metric">30%</div>
+            </div>
+            <div class="card">
+                <i class="fas fa-seedling icon"></i>
+                <h2>Phosphorus</h2>
+                <div class="metric">40%</div>
+            </div>
+            <div class="cardp">
+                <i class="fas fa-seedling icon"></i>
+                <h2>Potassium</h2>
+                <div class="metric">30%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="section2">
+        <h1>Section 2</h1>
+        <p>This is the content for Section 2.</p>
+    </div>
+
+    <div class="content" id="section3">
+        <h2>Manual Fertilizer</h2>
+        <p>Manual fertilizer application allows you to control the levels of essential nutrients for your plants. It involves the application of nitrogen, phosphorus, and potassium (N-P-K) in the right proportions to promote healthy plant growth.</p>
+
+        <h3>Nutrient Information:</h3>
+        <ul>
+            <li><strong>Nitrogen (N):</strong> Nitrogen is essential for leafy green growth. It helps plants produce chlorophyll, which is vital for photosynthesis.</li>
+            <li><strong>Phosphorus (P):</strong> Phosphorus is crucial for root development, flowering, and fruiting in plants.</li>
+            <li><strong>Potassium (K):</strong> Potassium is important for overall plant health, aiding in disease resistance and water uptake.</li>
+        </ul>
+
+        <h3>Automate Fertilizer Application:</h3>
+        <p>Click the buttons below to trigger fertilizer application based on the specific needs of your plants:</p>
+
+        <button id="automateNitrogen">Automate Nitrogen</button>
+        <button id="automatePhosphorus">Automate Phosphorus</button>
+        <button id="automatePotassium">Automate Potassium</button>
+    </div>
+    </div>
+
+    <!-- New Content Sections -->
+    <div class="content" id="section4">
+        <h1>SET YOUR NPK DESIRED LEVEL</h1>
+        <form id="npk-desired-form">
+            <label for="nitrogen">Nitrogen:</label>
+            <select id="nitrogen" name="nitrogen">
+                <option value="low">Low = 0-15 mg/kg</option>
+                <option value="medium">Medium = 15-30 mg/kg</option>
+                <option value="high">High =  30 + mg/kg</option>
+            </select><br>
+
+            <label for="phosphorus">Phosphorus:</label>
+            <select id="phosphorus" name="phosphorus">
+                <option value="low">Low = 0-25 mg/kg</option>
+                <option value="medium">Medium = 25-50 mg/kg</option>
+                <option value="high">High =  50 + mg/kg</option>
+            </select><br>
+
+            <label for="potassium">Potassium:</label>
+            <select id="potassium" name="potassium">
+                <option value="low">Low = 0-60 mg/kg</option>
+                <option value="medium">Medium = 60-100 mg/kg</option>
+                <option value="high">High =  100 + mg/kg</option>
+            </select><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="content" id="section5">
+        <h1>Section 5</h1>
+        <p>This is the content for Section 5.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mainContent = document.getElementById("main-content");
+            const homeLink = document.getElementById("home-link");
+    
+            // Function to scroll to the main content when Home is clicked
+            function scrollToMainContent() {
+                mainContent.scrollIntoView({ behavior: "smooth" });
+            }
+    
+            // Add click event listeners to navigation links
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetContent = document.getElementById(targetId);
+                    const allContent = document.querySelectorAll(".content");
+    
+                    // Hide all content sections
+                    allContent.forEach(content => {
+                        content.classList.remove("active");
+                    });
+    
+                    // If the targetId is "main-content," show the main content
+                    if (targetId === "main-content") {
+                        mainContent.style.display = "block";
+                    } else {
+                        // Otherwise, hide the main content
+                        mainContent.style.display = "none";
+                    }
+    
+                    // Show the selected content section
+                    targetContent.classList.add("active");
+                });
+            });
+    
+            // Add click event listener to the Home link
+            homeLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                scrollToMainContent();
+            });
+    
+            // Add a submit event listener to the form
+            const npkForm = document.getElementById("npk-desired-form");
+            npkForm.addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent the form from submitting
+    
+                // Get the selected values from the form
+                const nitrogenValue = document.getElementById("nitrogen").value;
+                const phosphorusValue = document.getElementById("phosphorus").value;
+                const potassiumValue = document.getElementById("potassium").value;
+    
+                // Create an alert message with the selected values
+                const alertMessage = `Desired NPK Levels: 
+                Nitrogen: ${nitrogenValue}
+                Phosphorus: ${phosphorusValue}
+                Potassium: ${potassiumValue}`;
+    
+                // Display the alert message
+                alert(alertMessage);
+            });
+        });
+    </script>
+</body>
+</html>

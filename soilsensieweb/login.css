@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('agriculture-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    color: #4CAF50; /* Green color */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px; /* Add margin to the right of the button */
+}
+
+.login-button:last-child {
+    margin-right: 0; /* Remove the margin from the last button */
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Slightly darker green color on hover */
+}
+
+/* Additional styles for the registration form */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+/* Common Agricultural Theme Styles */
+.login-container, .register-container {
+    font-family: 'Georgia', serif; /* Serif font for a traditional, agricultural look */
+    border: 1px solid #8B4513; /* SaddleBrown border color */
+    color: #8B4513; /* SaddleBrown text color */
+    background-color: rgba(255, 248, 220, 0.9); /* Wheat background color */
+}
